@@ -8,3 +8,94 @@ body {
 .inModal {
     display: flex;
 }
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+}
+
+.yellow {
+    width: 100%;
+}
+
+.text-area {
+    margin-bottom: 1rem;
+}
+
+.yellow > input {
+    margin-bottom: 1rem;
+}
+
+.formBottom {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.formButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.visa {
+    z-index: 10
+}
+
+.card {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 0.2rem 0.5rem;
+    min-width: 100%;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    min-height: 3.3rem;
+    transition: 0.3s all ease-in-out;
+}
+
+.card:hover {
+    box-shadow: #bababa 3px 5px;
+}
+
+.left-card {
+    width: 18%;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: #bababa;
+    font-size:1.5rem;
+}
+
+.right-card {
+    width: 82%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #bababa;
+}
+
+.lefty {
+    display: flex;
+
+    justify-content: flex-start;
+}
+
+.visaImg {
+    height: 3rem;
+    margin-left: 0.7rem;
+}
+
+.pay {
+    min-width: 8rem;
+}
+
+.newHeading {
+    display: flex;
+    justify-content: space-between;
+
+}

@@ -15,9 +15,12 @@ var bodyParser = require('body-parser');
 var async = require("async");
 var http = require('http');
 
+var cors = require("cors");
+
 // Deps
 // App Setup
 var app = express();
+app.use(cors)
 app.enable('strict routing');
 
 // Post data parsing
