@@ -11,7 +11,7 @@ Mini Project as a proof of concept for the role of **Frontend Developer at Cleve
 * Install node.js 10 or higher if not already installed.
 * Install packages by running `npm install` in the project root.
 * Run the project by running `npm start` or `node app.js` in the project root.
-* A web server will be started at `http://localhost:3000`.
+* A web server will be started at `http://localhost:5000`.
 
 
 # APIs
