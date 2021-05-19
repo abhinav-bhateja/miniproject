@@ -15,17 +15,23 @@ var bodyParser = require('body-parser');
 var async = require("async");
 var http = require('http');
 
-var cors = require("cors");
-
 // Deps
 // App Setup
 var app = express();
-app.use(cors)
 app.enable('strict routing');
 
 // Post data parsing
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+var allowCrossDomain = function(req, res, next) {
+    res.header('Access-Control-Allow-Origin', "http://localhost:3000");
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    next();
+}
+
+app.use(allowCrossDomain);
 
 // Compression
 app.use(require('compression')({threshold: 2048}));
